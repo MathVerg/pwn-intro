@@ -1,0 +1,6 @@
+asm
+asm.s
+canary
+execstack
+libc*
+rop
