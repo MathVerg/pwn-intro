@@ -1,8 +1,6 @@
 # Introduction à l'exploitation de binaire
 
-Slides et code d'un talk donné pour [Root-Me](https://www.root-me.org/) le 2 août 2024.
-
-Lien de la rediffusion sur Youtube : *pas encore publiée*.
+Slides et code d'un talk donné pour [Root-Me](https://www.root-me.org/) sur [Twitch](https://www.twitch.tv/rootme_org) le 2 août 2024. La rediffusion est disponible sur [YouTube](https://www.youtube.com/watch?v=TdQa6QwyovI).
 
 Les binaires peuvent être compilés avec `make`. Les offsets ne seront pas forcément les mêmes que ceux que j'ai mis dans mes exploits, à vous de les adapter ^^
 
@@ -18,7 +16,7 @@ Les différents flags utilisés dans le Makefile :
 - `-zexecstack`: rend la stack exécutable
 - `-no-pie`: désactive la PIE, je n'en ai pas trop parlé dans le talk, mais en gros, la PIE permet de randomiser l'adresse du binaire (en plus de celles de la libc, de la stack et du heap) via l'ASLR
 
-Pour désactiver temporairement l'ASRL:
+Pour désactiver temporairement l'ASLR :
 ```
 echo 0 > /proc/sys/kernel/randomize_va_space
 ```
